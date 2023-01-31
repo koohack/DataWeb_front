@@ -9,8 +9,9 @@ import Team from "./scenes/team";
 import Collection from "./scenes/collection";
 import FAQ from "./scenes/faq";
 import Checking from "./scenes/checking";
-// import Invoices from "./scenes/invoices";
-// import Contacts from "./scenes/contacts";
+import Posts from "./scenes/posts";
+import Comment from "./scenes/comment";
+import Reward from "./scenes/reward";
 // import Bar from "./scenes/bar";
 // import Form from "./scenes/form";
 // import Line from "./scenes/dashboard";
@@ -38,13 +39,12 @@ const App = () => {
               <Route path="/faq" element={<FAQ />}/>
               <Route path="/collect_data" element={<Collection />}/>
               <Route path="/check_data" element={<Checking />}/>
-              {/* <Route path="/bar" element={<Bar />}/> */}
-              {/* <Route path="pie" element={<Pie />}/> */}
-              {/* <Route path="/line" element={<Line />}/> */}
+              <Route path="/posts" element={<Posts />}/>
+              <Route path="/comment" element={<Comment />}/>
+              <Route path="/reward_data" element={<Reward />}/>
               {/* <Route path="/form" element={<Form />}/> */}
               {/* <Route path="/geography" element={<Geography />}/> */}
               {/* <Route path="/calendar" element={<Calender />}/> */}
-              {/* <Route path="/" element={<Dashboard />}/> */}
             </Routes>
 
           </main>

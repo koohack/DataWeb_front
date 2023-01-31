@@ -80,7 +80,20 @@ async function topUser () {
     return response;
 }
 
+async function getRewardData () {
+    const response = await axios.get("http://118.67.143.94:30001/api/reward_data");
+    return response;
+}
 
+async function postRewardData (data) {
+    const response = await axios.post("http://118.67.143.94:30001/api/post_reward_data", data);
+    return response;
+}
+
+async function getDashboardData (){
+    const response = await axios.get("http://118.67.143.94:30001/api/dashboard_data");
+    return response;
+}
 
 // Function utils
 function cardDisplay(dataStore){
@@ -92,4 +105,4 @@ function cardDisplay(dataStore){
 }
 
 
-export { getText, postLabeled, getNeedCheckData, userCount, cardDisplay, permitLabel, rejectLabel, topUser };
+export { getText, postLabeled, getNeedCheckData, userCount, cardDisplay, permitLabel, rejectLabel, topUser, getRewardData, postRewardData, getDashboardData };
