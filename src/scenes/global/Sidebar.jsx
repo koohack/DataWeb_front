@@ -3,7 +3,6 @@ import { ProSidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import { tokens } from "../../theme";
-import HorizonLine from "../../components/HorizonLine";
 import 'react-pro-sidebar/dist/css/styles.css';
 import React from 'react'
 
@@ -15,6 +14,7 @@ import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import AssignmentTurnedInIcon from '@mui/icons-material/AssignmentTurnedIn';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 import StarsIcon from '@mui/icons-material/Stars';
+import BugReportIcon from '@mui/icons-material/BugReport';
 
 const Item = ({title, to, icon, selected, setSelected}) => {
   const theme = useTheme();
@@ -101,6 +101,9 @@ function Sidebar() {
 
           {/* MENU ITEMS */}
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
+            <Typography variant="h7" ml="15px">Service</Typography>
+            <Item title="Posts" to="/posts" icon={<NewspaperIcon />} selected={selected} setSelected={setSelected} />
+            <Item title="Test" to="/test" icon={<BugReportIcon />} selected={selected} setSelected={setSelected} />
             <Typography variant="h7" ml="15px">Data</Typography>
             <Item title="Dashboard" to="/" icon={<HomeOutlinedIcon />} selected={selected} setSelected={setSelected} />
             <Item title="Manage Team" to="/team" icon={<PeopleOutlinedIcon />} selected={selected} setSelected={setSelected} />
@@ -108,8 +111,6 @@ function Sidebar() {
             <Item title="Data Collection" to="/collect_data" icon={<LibraryBooksIcon />} selected={selected} setSelected={setSelected} />
             <Item title="Data Checking" to="/check_data" icon={<AssignmentTurnedInIcon />} selected={selected} setSelected={setSelected} />
             <Item title="Reward Data" to="/reward_data" icon={<StarsIcon />} selected={selected} setSelected={setSelected} />
-            <Typography variant="h7" ml="15px">Service</Typography>
-            <Item title="Posts" to="/posts" icon={<NewspaperIcon />} selected={selected} setSelected={setSelected} />
             {/* <Item title="Bar Chart" to="/bar" icon={<BarChartOutlinedIcon />} selected={selected} setSelected={setSelected} /> */}
             {/* <Item title="Pie Chart" to="/pie" icon={<PieChartOutlinedIcon />} selected={selected} setSelected={setSelected} /> */}
             {/* <Item title="Line Chart" to="/line" icon={<TimelineOutlinedIcon />} selected={selected} setSelected={setSelected} /> */}

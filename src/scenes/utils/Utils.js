@@ -90,8 +90,14 @@ async function postRewardData (data) {
     return response;
 }
 
-async function getDashboardData (){
+async function getDashboardData () {
     const response = await axios.get("http://118.67.143.94:30001/api/dashboard_data");
+    return response;
+}
+
+
+async function getTestData (data) {
+    const response = await axios.get("http://118.67.143.94:30003/classification");
     return response;
 }
 
@@ -105,4 +111,5 @@ function cardDisplay(dataStore){
 }
 
 
-export { getText, postLabeled, getNeedCheckData, userCount, cardDisplay, permitLabel, rejectLabel, topUser, getRewardData, postRewardData, getDashboardData };
+export { getText, postLabeled, getNeedCheckData, userCount, cardDisplay, permitLabel, rejectLabel, topUser, 
+    getRewardData, postRewardData, getDashboardData, getTestData };

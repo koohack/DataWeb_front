@@ -12,7 +12,7 @@ import Checking from "./scenes/checking";
 import Posts from "./scenes/posts";
 import Comment from "./scenes/comment";
 import Reward from "./scenes/reward";
-// import Bar from "./scenes/bar";
+import Test from "./scenes/test";
 // import Form from "./scenes/form";
 // import Line from "./scenes/dashboard";
 // import Pie from "./scenes/pie";
@@ -42,7 +42,7 @@ const App = () => {
               <Route path="/posts" element={<Posts />}/>
               <Route path="/comment" element={<Comment />}/>
               <Route path="/reward_data" element={<Reward />}/>
-              {/* <Route path="/form" element={<Form />}/> */}
+              <Route path="/test" element={<Test />}/>
               {/* <Route path="/geography" element={<Geography />}/> */}
               {/* <Route path="/calendar" element={<Calender />}/> */}
             </Routes>
