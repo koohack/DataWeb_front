@@ -23,14 +23,14 @@ const test = () => {
 }
 
 
-function PostCard({id, title, text}) {
+function PostCard({id, title, text, date}) {
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345,  maxHeight: 500}}>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
+            {id}
           </Avatar>
         }
         action={
@@ -38,17 +38,15 @@ function PostCard({id, title, text}) {
             <MoreVertIcon />
           </IconButton>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title={title}
+        subheader={date}
       />
 
       <CardActionArea>
-        <Link to={"/comment"} state={{id: "ids"}}>
-        <CardContent>
-          <Typography variant="body2" color="text.secondary">
-            This impressive paella is a perfect party dish and a fun meal to cook
-            together with your guests. Add 1 cup of frozen peas along with the mussels,
-            if you like.
+        <Link to={"/comment"} state={{id: {id}}}>
+        <CardContent >
+          <Typography variant="body2" color="text.secondary" >
+            {text.length <= 285 ? text : (text.substr(0, 285) + "...")}
           </Typography>
         </CardContent>
         </Link>

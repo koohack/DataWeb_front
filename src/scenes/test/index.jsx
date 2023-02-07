@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box, Button, IconButton, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { tokens } from "../../theme";
 import Header from "../../components/Header";
-import { getTestData } from "../utils/Utils.js"
+import { getTestData, getPosters, getPurified } from "../utils/Utils.js"
 
 
 function Test() {
@@ -11,10 +11,14 @@ function Test() {
 
   const [data, setData] = useState({});
 
-  const temp = {"temp": "시발"};
-  const response = getTestData(temp);
+  //const temp = {"text": "시발"};
+  //const response = getTestData(temp);
+  //console.log(response);
+  const info = {
+    "sentence": "아니 시발 이게 맞아요?? 좆같이 생겼네"
+  }
+  const response = getPurified(info);
   console.log(response);
-
 
   return (
     <Box m="20px">

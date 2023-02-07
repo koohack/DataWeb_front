@@ -5,13 +5,22 @@ import { tokens } from "../../theme";
 import Header from "../../components/Header";
 import PostCard from "../../components/PostCard";
 import AddCardIcon from '@mui/icons-material/AddCard';
+import { getPosters, postDisplay } from "../utils/Utils.js"
 
 function Posts() {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
+  const [initial, setInitial] = useState(false);
+  const [data, setData] = useState([]);
 
-  
+  if (initial == false){
+    const response = getPosters();
+    response.then(function(response){
+      setData(response.data["datas"]);
+      setInitial(true);
+    })
+  }
 
   return (
     <Box m="20px">
@@ -32,7 +41,7 @@ function Posts() {
             </Button>
         </Box>
       </Box>
-
+      
       {/* Posts + add new post */}
       <Box
         display="grid"
@@ -40,45 +49,10 @@ function Posts() {
         gridAutoRows="250px"
         gap="20px"
       >
-        <Box
-          gridColumn="span 3"
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <PostCard />
-        </Box>
 
-        <Box
-          gridColumn="span 3"
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <PostCard />
-        </Box>
+        { postDisplay(data.copyWithin()) }
 
-        <Box
-          gridColumn="span 3"
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <PostCard />
-        </Box>
-
-        <Box
-          gridColumn="span 3"
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-        >
-          <PostCard />
-        </Box>
-
-      </Box>        
-
-      
+      </Box> 
     </Box>
   )
 }

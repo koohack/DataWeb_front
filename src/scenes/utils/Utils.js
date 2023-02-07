@@ -2,6 +2,9 @@ import React from 'react';
 import axios from "axios";
 import swal from "sweetalert";
 import MyCard from "../../components/MyCard";
+import PostCard from "../../components/PostCard";
+import CommentBox from "../../components/CommentBox";
+import { Box, Button, IconButton, Typography, useMediaQuery, useTheme } from "@mui/material";
 
 // HTTP connection utils
 async function getText () {
@@ -33,7 +36,6 @@ async function rejectLabel (data) {
     }).then(async (value) => {
         switch (value){
             case "ok":
-                console.log("tempo");
                 state = true;
                 break;
         }
@@ -95,9 +97,33 @@ async function getDashboardData () {
     return response;
 }
 
+async function getPosters () {
+    const response = await axios.get("http://118.67.143.94:30001/api/post");
+    return response;
+}
 
 async function getTestData (data) {
-    const response = await axios.get("http://118.67.143.94:30003/classification");
+    const response = await axios.post("http://118.67.143.94:30003/classification", data);
+    return response;
+}
+
+async function getOnePoster(data) {
+    const response = await axios.post("http://118.67.143.94:30001/api/one_post", data);
+    return response;
+}
+
+async function postComment(data){
+    const response = await axios.post("http://118.67.143.94:30001/api/post_comment", data);
+    return response;
+}
+
+async function hateCheck(data){
+    const response = await axios.post("http://118.67.143.94:30003/classification", data);
+    return response;
+}
+
+async function getPurified(data){
+    const response = await axios.post("http://118.67.143.94:30006/purificate", data);
     return response;
 }
 
@@ -107,9 +133,41 @@ function cardDisplay(dataStore){
     for(const idx in dataStore){
         cards.push(<MyCard data={dataStore[idx]} key={idx} sx={{gridColumn: "span 3"}}/>)
     }
-    return cards
+    return cards;
+}
+
+function postDisplay(dataStore){
+    const posts = [];
+    for(const idx in dataStore){
+        const item = dataStore[idx];
+        posts.push(
+            <Box
+            gridColumn="span 3"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            gridRow="span 2"
+            >
+                <PostCard id={item["_id"]} title={item["post_title"]} text={item["post_text"]} date={item["time"]}/>
+            </Box>
+        )
+    }
+    return posts;
+}
+
+function commentDisplay(dataStore){
+    const comments = [];
+    const length = dataStore.length - 1;
+    for(const idx in dataStore){
+        var now = length - idx;
+        comments.push(<CommentBox idx={now} text={dataStore[now]["comment"]} date={dataStore[now]["date"]}/>)
+    }
+    return comments;
 }
 
 
+
+
 export { getText, postLabeled, getNeedCheckData, userCount, cardDisplay, permitLabel, rejectLabel, topUser, 
-    getRewardData, postRewardData, getDashboardData, getTestData };
+    getRewardData, postRewardData, getDashboardData, getTestData, getPosters, postDisplay,
+    getOnePoster, commentDisplay, hateCheck, postComment, getPurified };
