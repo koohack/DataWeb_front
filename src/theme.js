@@ -61,6 +61,17 @@ export const tokens = (mode) => ({
                 800: "#2a2d64",
                 900: "#151632"
             },
+            khaki: {
+                100: "#fcf6d9",
+                200: "#faf2c6",
+                300: "#f7eeb3",
+                400: "#f4ea9f",
+                500: "#f0e68c",
+                600: "#c4bc73",
+                700: "#99935c",
+                800: "#716c45",
+                900: "#4b482f"
+            },
         } : {
             grey: {
                 100: "#141414",
@@ -117,6 +128,17 @@ export const tokens = (mode) => ({
                 800: "#c3c6fd",
                 900: "#e1e2fe",
             },
+            khaki: {
+                100: "#fcf6d9",
+                200: "#faf2c6",
+                300: "#f7eeb3",
+                400: "#f4ea9f",
+                500: "#f0e68c",
+                600: "#c4bc73",
+                700: "#99935c",
+                800: "#716c45",
+                900: "#4b482f"
+            },
         }
     )
 });
@@ -136,6 +158,12 @@ export const themeSetting = (mode) => {
                 secondary: {
                     main: colors.greenAccent[500],
                 },
+                title: {
+                    main: colors.blueAccent[500]
+                },
+                content: {
+                    main: colors.khaki[500]
+                },
                 neutral: {
                     dark: colors.grey[700],
                     main: colors.grey[500],
@@ -150,6 +178,12 @@ export const themeSetting = (mode) => {
                 },
                 secondary: {
                     main: colors.greenAccent[500],
+                },
+                title: {
+                    main: colors.blueAccent[300]
+                },
+                content: {
+                    main: colors.khaki[800]
                 },
                 neutral: {
                     dark: colors.grey[700],

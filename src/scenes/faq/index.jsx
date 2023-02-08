@@ -17,13 +17,13 @@ function FAQ() {
         }}
       >
         <HorizonLine />
-        <Typography variant="h5" sx={{ gridColumn: "span 3", fontWeight: "bold", color: "greenyellow"}}>목표 : 왜 순화하려고 하는가?</Typography>
+        <Typography variant="h5" sx={{ gridColumn: "span 3", fontWeight: "bold", color: "title.main"}}>목표 : 왜 순화하려고 하는가?</Typography>
         <Typography variant="h7" sx={{ gridColumn: "span 3"}}>
           혐오 표현을 사용하지 않고, 보다 건전하게 의견을 나눌 수 있으면 좋을 것 같다는 생각을 자주했다.
         </Typography>
 
         <HorizonLine />
-        <Typography variant="h5" sx={{ gridColumn: "span 3", fontWeight: "bold", color: "greenyellow"}}>분류</Typography>
+        <Typography variant="h5" sx={{ gridColumn: "span 3", fontWeight: "bold", color: "title.main"}}>분류</Typography>
         <Typography variant="h7" sx={{ gridColumn: "span 3"}}>
           &nbsp;&nbsp;욕설 데이터는 이미 보유하고 있지만, 욕설 데이터에 대응되는 데이터를 수집하는 것은 어려운 문제였다. 데이터 부족을 조금이나마 완화하고자 데이터 수집을 하기로 결정했다.<br /><br />
           &nbsp;&nbsp;우리는 욕설 데이터를 아래와 같은 3가지 형태로 분리하고자 한다. <br />
@@ -33,7 +33,7 @@ function FAQ() {
         </Typography>
 
         <HorizonLine />
-        <Typography variant="h5" sx={{ gridColumn: "span 3", fontWeight: "bold", color: "greenyellow"}}>순화 기준</Typography>
+        <Typography variant="h5" sx={{ gridColumn: "span 3", fontWeight: "bold", color: "title.main"}}>순화 기준</Typography>
         <Typography variant="h6" sx={{ gridColumn: "span 3", fontWeight: "bold"}}>1. 최대한 기존 문장의 단어, 구조를 유지해야 한다. (정상적인 문장에 일부 혐오 표현이 포함되어 있는 경우, 그 부분만 자르거나 변경하면 된다.) <br /></Typography>
         <Typography variant="h7" sx={{ gridColumn: "span 3"}}>
           예시 1)<br />
@@ -67,7 +67,7 @@ function FAQ() {
         </Typography>
 
         <HorizonLine />
-        <Typography variant="h5" sx={{ gridColumn: "span 3", fontWeight: "bold", color: "greenyellow"}}>혐오 표현 기준</Typography>
+        <Typography variant="h5" sx={{ gridColumn: "span 3", fontWeight: "bold", color: "title.main"}}>혐오 표현 기준</Typography>
         <Typography variant="h6" sx={{ gridColumn: "span 3", fontWeight: "bold"}}>1. 정치에 대한 편향성은 혐오의 편향성으로 고려되지 않는다.</Typography>
         <Typography variant="h7" sx={{ gridColumn: "span 3"}}>
           (주의: 정당이나 정치인을 맹목적으로 비하하는 용어가 포함된 문장은 혐오 표현이다.) <br />
@@ -86,7 +86,7 @@ function FAQ() {
         </Typography>
         
         <HorizonLine />
-        <Typography variant="h5" sx={{ gridColumn: "span 3", fontWeight: "bold", color: "greenyellow"}}> 추가 사항 </Typography>
+        <Typography variant="h5" sx={{ gridColumn: "span 3", fontWeight: "bold", color: "title.main"}}> 추가 사항 </Typography>
         <Typography variant="h7" sx={{ gridColumn: "span 3"}}>
           1. 앞서 설명한 것을 제외한 부분은 전적으로 유저의 판단에 맡깁니다.<br />
           2. "습니다" 말투보다는 "했다" 말투를 지향합니다.<br />
