@@ -61,6 +61,17 @@ export const tokens = (mode) => ({
                 800: "#2a2d64",
                 900: "#151632"
             },
+            khaki: {
+                100: "#4b482f",
+                200: "#716c45",
+                300: "#99935c",
+                400: "#c4bc73",
+                500: "#f0e68c",
+                600: "#f4ea9f",
+                700: "#f7eeb3",
+                800: "#faf2c6",
+                900: "#fcf6d9",
+            },
         } : {
             grey: {
                 100: "#141414",
@@ -117,6 +128,17 @@ export const tokens = (mode) => ({
                 800: "#c3c6fd",
                 900: "#e1e2fe",
             },
+            khaki: {
+                100: "#4b482f",
+                200: "#716c45",
+                300: "#99935c",
+                400: "#c4bc73",
+                500: "#f0e68c",
+                600: "#f4ea9f",
+                700: "#f7eeb3",
+                800: "#faf2c6",
+                900: "#fcf6d9",
+            },
         }
     )
 });
@@ -136,6 +158,13 @@ export const themeSetting = (mode) => {
                 secondary: {
                     main: colors.greenAccent[500],
                 },
+                title: {
+                    main: colors.blueAccent[500]
+                },
+                content: {
+                    main: colors.khaki[500],
+                    light: colors.khaki[800],
+                },
                 neutral: {
                     dark: colors.grey[700],
                     main: colors.grey[500],
@@ -149,7 +178,14 @@ export const themeSetting = (mode) => {
                     main: colors.primary[100],
                 },
                 secondary: {
-                    main: colors.greenAccent[500],
+                    main: colors.greenAccent[300],
+                },
+                title: {
+                    main: colors.blueAccent[400],
+                },
+                content: {
+                    main: colors.khaki[100],
+                    light: colors.khaki[200],
                 },
                 neutral: {
                     dark: colors.grey[700],

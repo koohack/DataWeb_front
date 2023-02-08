@@ -101,7 +101,7 @@ function Comment() {
 
       <Box mb="20px">
         <Typography variant="h6" sx={{ fontWeight: "bold", color: "darkcyan"}}>Post : <br /></Typography>
-        <Typography variant="h7" sx={{ color: "greenyellow" }}>{data["post_text"]}</Typography>
+        <Typography variant="h7">{data["post_text"]}</Typography>
       </Box>
 
       <Box mb="30px">

@@ -84,10 +84,10 @@ function HateInfo({flag, data, text}) {
             </Box>
           </Box>
           <Box mt="10px" mb="10px">
-            <Typography variant="h8" sx={{ color: "#f0e68c" }}>이런 방식으로 댓글을 바꿔보면 어떨까요??</Typography>
+            <Typography variant="h8" sx={{ color: "content.main" }}>이런 방식으로 댓글을 바꿔보면 어떨까요??</Typography>
           </Box>
           <Box>
-            <Typography sx={{ color: "#00bfff" }}> {text} </Typography>
+            <Typography sx={{ color: "title.main" }}> {text} </Typography>
           </Box>
           
         </AccordionDetails>

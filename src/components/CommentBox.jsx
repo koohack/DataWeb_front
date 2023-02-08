@@ -18,13 +18,13 @@ function CommentBox({idx, text, date}) {
           <Box ml="10px" mt="7px">
             <AccountCircleIcon />
           </Box>
-          <Typography variant="h6" ml="10px" mt="5px" sx={{ color: "#f0e68c" }}>익명 {Number(idx) + 1} </Typography>
+          <Typography variant="h6" ml="10px" mt="5px" sx={{ color: "content.main" }}>익명 {Number(idx) + 1} </Typography>
         </Box>
         <Box>
           <Typography variant="h8" ml="20px">Date : {date}</Typography>
         </Box>
         <Box>
-          <Typography variant="h7" ml="20px" sx={{ color: "#fffacd" }}>Comment : {text}</Typography>
+          <Typography variant="h7" ml="20px" sx={{ color: "content.light" }}>Comment : {text}</Typography>
         </Box>
       </Card>
     </Box>

@@ -111,7 +111,7 @@ function Reward() {
               <HorizonLine />
             </Box>
             
-            <Typography variant="h5" mt="35px" mb="30px" sx={{fontWeight: "bold", color: "greenyellow"}}>혐오 표현 : </Typography>
+            <Typography variant="h5" mt="35px" mb="30px" sx={{fontWeight: "bold", color: "title.main"}}>혐오 표현 : </Typography>
             <Typography variant="h6" mb="30px"> {texts[0]} </Typography>
             
             <Box
@@ -122,13 +122,13 @@ function Reward() {
                 "& > div": { gridColumn: isNonMobile ? undefined : "span 8"}
               }}
             >
-              <Typography variant="h7" sx={{ gridColumn: "span 8", color: "greenyellow"}}>순화 1 : </Typography>
+              <Typography variant="h7" sx={{ gridColumn: "span 8", color: "title.main"}}>순화 1 : </Typography>
               <Typography variant="h6" mb="30px" sx={{ gridColumn: "span 8"}}>{texts[1]}</Typography>
-              <Typography variant="h7" sx={{ gridColumn: "span 8", color: "greenyellow"}}>순화 2 : </Typography>
+              <Typography variant="h7" sx={{ gridColumn: "span 8", color: "title.main"}}>순화 2 : </Typography>
               <Typography variant="h6" mb="30px" sx={{ gridColumn: "span 8"}}>{texts[2]}</Typography>
-              <Typography variant="h7" sx={{ gridColumn: "span 8", color: "greenyellow"}}>순화 3 : </Typography>
+              <Typography variant="h7" sx={{ gridColumn: "span 8", color: "title.main"}}>순화 3 : </Typography>
               <Typography variant="h6" mb="30px" sx={{ gridColumn: "span 8"}}>{texts[3]}</Typography>
-              <Typography variant="h7" sx={{ gridColumn: "span 8", color: "greenyellow"}}>순화 4 : </Typography>
+              <Typography variant="h7" sx={{ gridColumn: "span 8", color: "title.main"}}>순화 4 : </Typography>
               <Typography variant="h6" mb="30px" sx={{ gridColumn: "span 8"}}>{texts[4]}</Typography>
               
               <TextField 

@@ -92,11 +92,11 @@ function Collection() {
                   1. 정치에 대한 편향성은 혐오의 편향성으로 고려되지 않는다. <br />
                   2. 유명인에 대한 비방은 의견으로 볼 수 있다. (단, 과하지 않는 선에서) <br />
                 </Typography>
-                <Typography variant="h8" sx={{ gridColumn: "span 3", color: "#f0e68c" }}>이 외의 고려 사항은 유저가 자의적으로 판단하는 것을 권장하며, 상세 순화 기준을 확인하기를 원하면 Labeling FAQ를 참고해주시면 감사하겠습니다! :)</Typography>
+                <Typography variant="h8" sx={{ gridColumn: "span 3", color: "content.main" }}>이 외의 고려 사항은 유저가 자의적으로 판단하는 것을 권장하며, 상세 순화 기준을 확인하기를 원하면 Labeling FAQ를 참고해주시면 감사하겠습니다! :)</Typography>
               <HorizonLine />
             </Box>
 
-            <Typography variant="h5" mt="35px" mb="30px" sx={{fontWeight: "bold", color: "greenyellow"}}> 순화해야 하는 문장 : <br /> </Typography>
+            <Typography variant="h5" mt="35px" mb="30px" sx={{fontWeight: "bold", color: "title.main"}}> 순화해야 하는 문장 : <br /> </Typography>
             <Typography variant="h6" mb="30px"> {text} </Typography>
 
             <Box 
@@ -120,7 +120,7 @@ function Collection() {
                 helperText={touched.labeledText && errors.labeledText}
                 sx={{ gridColumn: "span 3"}}
               />
-              <Typography variant="h7" sx={{ gridColumn: "span 3", color: "greenyellow"}}>부캠 번호 혹은 닉네임 :</Typography>
+              <Typography variant="h7" sx={{ gridColumn: "span 3", color: "title.main"}}>부캠 번호 혹은 닉네임 :</Typography>
               <TextField 
                 fullWidth
                 variant="filled"
@@ -135,7 +135,7 @@ function Collection() {
                 sx={{ gridColumn: "span 3"}}
               />
 
-              <Typography variant="h7" sx={{ gridColumn: "span 3", color: "greenyellow"}}>아래 중 한 가지만 골라주세요.</Typography>
+              <Typography variant="h7" sx={{ gridColumn: "span 3", color: "title.main"}}>아래 중 한 가지만 골라주세요.</Typography>
               <FormControlLabel
                 onBlur={handleBlur} 
                 onChange={handleChange} 
