@@ -41,13 +41,13 @@ function MyCard({ data }) {
                 <Typography mb="5px" variant="h7" component="div" gutterBottom>
                     ({label})
                 </Typography>
-                <Typography  sx={{ fontSize: 18 }} color="greenyellow" gutterBottom>
+                <Typography  sx={{ fontSize: 18 }} color="title.main" gutterBottom>
                     욕설 or 혐오 데이터 : 
                 </Typography>
                 <Typography variant="h6" gutterBottom>
                     {text}
                 </Typography>
-                <Typography  sx={{ fontSize: 18 }} color="greenyellow" gutterBottom>
+                <Typography  sx={{ fontSize: 18 }} color="title.main" gutterBottom>
                     순화한 데이터 : 
                 </Typography>
                 <Typography variant="h6" gutterBottom>

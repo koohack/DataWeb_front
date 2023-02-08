@@ -4,11 +4,11 @@ import { ResponsiveLine } from '@nivo/line'
 
 function LineChart({data}) {
   const theme = {
-    textColor: "white",
+    textColor: "#70d8bd",
     axis: {
       ticks: {
         text: {
-          fill:"#ffffff",
+          fill:"#70d8bd",
         }
       }
     }

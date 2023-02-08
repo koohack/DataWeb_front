@@ -62,15 +62,15 @@ export const tokens = (mode) => ({
                 900: "#151632"
             },
             khaki: {
-                100: "#fcf6d9",
-                200: "#faf2c6",
-                300: "#f7eeb3",
-                400: "#f4ea9f",
+                100: "#4b482f",
+                200: "#716c45",
+                300: "#99935c",
+                400: "#c4bc73",
                 500: "#f0e68c",
-                600: "#c4bc73",
-                700: "#99935c",
-                800: "#716c45",
-                900: "#4b482f"
+                600: "#f4ea9f",
+                700: "#f7eeb3",
+                800: "#faf2c6",
+                900: "#fcf6d9",
             },
         } : {
             grey: {
@@ -129,15 +129,15 @@ export const tokens = (mode) => ({
                 900: "#e1e2fe",
             },
             khaki: {
-                100: "#fcf6d9",
-                200: "#faf2c6",
-                300: "#f7eeb3",
-                400: "#f4ea9f",
+                100: "#4b482f",
+                200: "#716c45",
+                300: "#99935c",
+                400: "#c4bc73",
                 500: "#f0e68c",
-                600: "#c4bc73",
-                700: "#99935c",
-                800: "#716c45",
-                900: "#4b482f"
+                600: "#f4ea9f",
+                700: "#f7eeb3",
+                800: "#faf2c6",
+                900: "#fcf6d9",
             },
         }
     )
@@ -162,7 +162,8 @@ export const themeSetting = (mode) => {
                     main: colors.blueAccent[500]
                 },
                 content: {
-                    main: colors.khaki[500]
+                    main: colors.khaki[500],
+                    light: colors.khaki[800],
                 },
                 neutral: {
                     dark: colors.grey[700],
@@ -177,13 +178,14 @@ export const themeSetting = (mode) => {
                     main: colors.primary[100],
                 },
                 secondary: {
-                    main: colors.greenAccent[500],
+                    main: colors.greenAccent[300],
                 },
                 title: {
-                    main: colors.blueAccent[300]
+                    main: colors.blueAccent[400],
                 },
                 content: {
-                    main: colors.khaki[800]
+                    main: colors.khaki[100],
+                    light: colors.khaki[200],
                 },
                 neutral: {
                     dark: colors.grey[700],
